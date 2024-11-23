@@ -4,16 +4,21 @@
 
 {% block hero %}
 
-<section id="hero" class="hero section dark-background">
+<section id="hero" class="hero section dark-background" style="position: relative; display: flex; align-items: center; justify-content: center; text-align: center; padding: 50px 15px;">
+  
+  <img src="{% static 'assets/img/nitin1.jpg' %}" alt="Nitin Sharma Image" 
+    style="max-width: 100%; height: auto; object-fit: cover; border-radius: 10px;" />
+  
+  <div class="container" data-aos="fade-up" data-aos-delay="100" 
+    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;">
+    <h2>Nitin Sharma</h2>
+    <p>
+      I'm <span class="typed" data-typed-items="Programmer, Developer, Coder">Designer</span>
+      <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+    </p>
+  </div>
+</section>
 
-    <img src="{% static "assets/img/nitin1.jpg" %}" alt="" data-aos="fade-in" class="">
-
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <h2>Nitin Sharma</h2>
-      <p>I'm <span class="typed" data-typed-items="Programmer, Developer, Coder">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-    </div>
-
-  </section>
 
 {% endblock hero %}
 
