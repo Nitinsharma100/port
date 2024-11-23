@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages
-from .models import Contact,Project
+from .models import Contact
 # Create your views here.
 def home(request):
     return render(request,'app/home.html')
@@ -25,8 +25,8 @@ def contact(request):
 
 
 def projects(request):
-    project_list = Project.objects.all()
-    return render(request, 'app/blog.html', {'projects': project_list})
+    
+    return render(request, 'app/blog.html')
 
 
 
