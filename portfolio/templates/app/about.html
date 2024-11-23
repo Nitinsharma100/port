@@ -1,0 +1,90 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}About - Portfolio{% endblock title %}
+
+{% block body %}
+
+<section id="about" class="about section" style="background-color: #f8f9fa; padding: 60px 0;">
+
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p class="text-muted">
+      I am a dedicated Fullstack Developer skilled in building robust and user-friendly web applications. With expertise in Django for backend development and proficiency in frontend technologies, I aim to create impactful digital solutions.
+    </p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4 align-items-center">
+
+      <!-- Profile Image -->
+      <div class="col-lg-4 text-center">
+        <img src="{% static 'assets/img/nitin2.jpg' %}" 
+             class="img-fluid" 
+             style="width: 100%; max-width: 280px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); border-radius: 15px;" 
+             alt="Nitin Sharma">
+      </div>
+
+      <!-- About Content -->
+      <div class="col-lg-8 content">
+        <h3 class="mb-3">Fullstack Developer</h3>
+        <p>
+          With a strong passion for problem-solving and innovation, I specialize in developing seamless and efficient web solutions. My expertise spans from creating intuitive user interfaces to building scalable backend systems, ensuring a high-quality user experience.
+        </p>
+
+        <!-- Personal Information -->
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-calendar"></i> <strong>Birthday:</strong> <span>18 October 2003</span></li>
+              <li><i class="bi bi-phone"></i> <strong>Phone:</strong> <span>8176012803</span></li>
+              <li><i class="bi bi-geo-alt"></i> <strong>City:</strong> <span>Palia Kalan, Kheri</span></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-people"></i> <strong>Age:</strong> <span>20</span></li>
+              <li><i class="bi bi-mortarboard"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+              <li><i class="bi bi-envelope"></i> <strong>Email:</strong> <span>ns651143@gmail.com</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Skill Set -->
+        <h4 class="mt-4">Key Skills</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Django (Backend)</li>
+              <li><i class="bi bi-check-circle-fill"></i> HTML, CSS, JavaScript</li>
+              <li><i class="bi bi-check-circle-fill"></i> Responsive Web Design</li>
+              <li><i class="bi bi-check-circle-fill"></i> ReactJS</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> SQL Databases</li>
+              <li><i class="bi bi-check-circle-fill"></i> MongoDB</li>
+              <li><i class="bi bi-check-circle-fill"></i> RESTful APIs</li>
+              <li><i class="bi bi-check-circle-fill"></i> Problem-Solving</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <h4 class="mt-4">Languages</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <ul>
+              <li><i class="bi bi-chat-dots"></i> <strong>Hindi:</strong> Fluent</li>
+              <li><i class="bi bi-chat-dots"></i> <strong>English:</strong> Basic</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock body %}

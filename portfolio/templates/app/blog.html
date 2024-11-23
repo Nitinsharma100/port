@@ -1,0 +1,35 @@
+{% extends "app/base.html" %}
+{% load static %}
+
+{% block title %}My Projects{% endblock title %}
+
+{% block body %}
+<section id="projects" class="projects section bg-light py-5">
+    <div class="container text-center section-title mb-5" data-aos="fade-up">
+        <h2 class="display-4 fw-bold">My Projects</h2>
+        <p class="lead text-muted">Explore the projects I have worked on.</p>
+    </div>
+
+    <div class="container">
+        <div class="row gy-5 justify-content-center">
+            {% for project in projects %}
+            <div class="col-lg-4 col-md-6">
+                <div class="card shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <img src="{{ project.image.url }}" class="card-img-top img-fluid" alt="{{ project.name }}" style="object-fit: cover; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.name }}</h5>
+                        <p class="card-text text-muted mb-2">
+                            {{ project.description|truncatewords:15 }}
+                        </p>
+                        <p class="text-muted small mb-1">
+                            <i class="bi bi-box me-1" style="font-size: 1.2rem; color: #343a40;"></i> Section: <b>{{ project.section }}</b>
+                        </p>
+                        <a href="{{ project.github_link }}" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock body %}
