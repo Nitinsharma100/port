@@ -1,0 +1,314 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Home-PortFolio{% endblock title %}
+
+{% block hero %}
+
+<section id="hero" class="hero section" 
+  style="position: relative; display: flex; align-items: center; justify-content: center; text-align: center; padding: 50px 15px; background-color: #f3f4f6;">
+  
+  <!-- Background Image -->
+  <img src="{% static 'assets/img/s3.jpg' %}" alt="Nitin Sharma Image" 
+    style="max-width: 100%; height: auto; object-fit: cover; border-radius: 10px;" />
+  
+  <!-- Content Overlay -->
+  <div class="container" data-aos="fade-up" data-aos-delay="100" 
+    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 600px;">
+    <h2 style="font-size: 2rem; font-family: 'Arial', sans-serif; font-weight: 600; margin-bottom: 15px; color: #333;">
+      Hi, I'm Saumya!
+    </h2>
+    <p style="font-size: 1.2rem; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 25px; color: #333; font-weight: 500;">
+      I'm a student who loves to learn and create things. I enjoy coding and making fun projects. I'm passionate about 
+      learning new things and improving my skills every day.
+    </p>
+    <p style="font-size: 1rem; font-family: 'Roboto', sans-serif; line-height: 1.6; margin-bottom: 30px; color: #333;">
+      I specialize in web development and love experimenting with new ideas. Let's create something cool together!
+    </p>
+  </div>
+</section>
+
+
+
+
+  <section id="about" class="about section" style="background-color: #f8f9fa; padding: 60px 0;">
+  
+    <!-- Section Title -->
+    <div class="container section-title text-center" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p class="text-muted">
+        I am a dedicated Fullstack Developer skilled in building robust and user-friendly web applications. With expertise in Django for backend development and proficiency in frontend technologies, I aim to create impactful digital solutions.
+      </p>
+    </div>
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 align-items-center">
+  
+        <!-- Profile Image -->
+        <div class="col-lg-4 text-center">
+          <img src="{% static 'assets/img/nitin2.jpg' %}" 
+               class="img-fluid" 
+               style="width: 100%; max-width: 280px; box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); border-radius: 15px;" 
+               alt="Nitin Sharma">
+        </div>
+  
+        <!-- About Content -->
+        <div class="col-lg-8 content">
+          <h3 class="mb-3">Fullstack Developer</h3>
+          <p>
+            With a strong passion for problem-solving and innovation, I specialize in developing seamless and efficient web solutions. My expertise spans from creating intuitive user interfaces to building scalable backend systems, ensuring a high-quality user experience.
+          </p>
+  
+          <!-- Personal Information -->
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><i class="bi bi-calendar"></i> <strong>Birthday:</strong> <span>18 October 2003</span></li>
+                <li><i class="bi bi-phone"></i> <strong>Phone:</strong> <span>8176012803</span></li>
+                <li><i class="bi bi-geo-alt"></i> <strong>City:</strong> <span>Palia Kalan, Kheri</span></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><i class="bi bi-people"></i> <strong>Age:</strong> <span>20</span></li>
+                <li><i class="bi bi-mortarboard"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                <li><i class="bi bi-envelope"></i> <strong>Email:</strong> <span>ns651143@gmail.com</span></li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- Skill Set -->
+          <h4 class="mt-4">Key Skills</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Django (Backend)</li>
+                <li><i class="bi bi-check-circle-fill"></i> HTML, CSS, JavaScript</li>
+                <li><i class="bi bi-check-circle-fill"></i> Responsive Web Design</li>
+                <li><i class="bi bi-check-circle-fill"></i> ReactJS</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> SQL Databases</li>
+                <li><i class="bi bi-check-circle-fill"></i> MongoDB</li>
+                <li><i class="bi bi-check-circle-fill"></i> RESTful APIs</li>
+                <li><i class="bi bi-check-circle-fill"></i> Problem-Solving</li>
+              </ul>
+            </div>
+          </div>
+  
+          <!-- Languages -->
+          <h4 class="mt-4">Languages</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><i class="bi bi-chat-dots"></i> <strong>Hindi:</strong> Fluent</li>
+                <li><i class="bi bi-chat-dots"></i> <strong>English:</strong> Basic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+<section id="projects" class="projects section bg-dark text-light py-5">
+  <div class="container text-center section-title mb-5" data-aos="fade-up">
+      <h2 class="display-4 fw-bold text-white">My Projects</h2>
+      <p class="lead text-light">Explore the projects I have worked on.</p>
+  </div>
+
+  <div class="container">
+      <div class="row gy-4 justify-content-center">
+
+          <!-- Student Management System -->
+          <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm border-0" data-aos="fade-up" data-aos-delay="100">
+                  <div class="card-img-container position-relative">
+                      <img src="{% static 'assets/project/admin.png' %}" class="card-img-top img-fluid" alt="Student Management System">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <a href="https://github.com/Nitinsharma100/stodent_management_system" target="_blank" class="btn btn-light btn-sm">View on GitHub</a>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Student Management System</h5>
+                      <p class="card-text text-muted">Software designed to streamline educational administration, manage student data, and more.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Student Portal -->
+          <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm border-0" data-aos="fade-up" data-aos-delay="200">
+                  <div class="card-img-container position-relative">
+                      <img src="{% static 'assets/project/portal.png' %}" class="card-img-top img-fluid" alt="Student Portal">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <a href="https://github.com/Nitinsharma100/StudentPortal" target="_blank" class="btn btn-light btn-sm">View on GitHub</a>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Student Portal</h5>
+                      <p class="card-text text-muted">An online platform providing students with academic access and resources.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Library Management -->
+          <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm border-0" data-aos="fade-up" data-aos-delay="300">
+                  <div class="card-img-container position-relative">
+                      <img src="{% static 'assets/project/library.png' %}" class="card-img-top img-fluid" alt="Library Management">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <a href="https://github.com/Nitinsharma100/library-Management" target="_blank" class="btn btn-light btn-sm">View on GitHub</a>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Library Management</h5>
+                      <p class="card-text text-muted">Software that simplifies library operations, manages book inventories, members, and more.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Donation and Volunteer -->
+          <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm border-0" data-aos="fade-up" data-aos-delay="400">
+                  <div class="card-img-container position-relative">
+                      <img src="{% static 'assets/project/donation.png' %}" class="card-img-top img-fluid" alt="Donation and Volunteer">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <a href="https://github.com/Nitinsharma100/donation" target="_blank" class="btn btn-light btn-sm">View on GitHub</a>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Donation and Volunteer</h5>
+                      <p class="card-text text-muted">Streamlines charitable activities by organizing donations and volunteer efforts.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Shopping X -->
+          <div class="col-lg-4 col-md-6">
+              <div class="card shadow-sm border-0" data-aos="fade-up" data-aos-delay="500">
+                  <div class="card-img-container position-relative">
+                      <img src="{% static 'assets/project/shop.png' %}" class="card-img-top img-fluid" alt="Shopping X">
+                      <div class="overlay d-flex align-items-center justify-content-center">
+                          <a href="https://github.com/Nitinsharma100/shopingX" target="_blank" class="btn btn-light btn-sm">View on GitHub</a>
+                      </div>
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title fw-bold">Shopping X</h5>
+                      <p class="card-text text-muted">An e-commerce platform enabling businesses to sell products or services online.</p>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</section>
+
+<!-- Inline CSS -->
+<style>
+  .card-img-container {
+      position: relative;
+      overflow: hidden;
+      height: 220px;
+  }
+
+  .card-img-container img {
+      transition: transform 0.3s ease-in-out;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+  }
+
+  .card-img-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  }
+
+  .card-img-container:hover img {
+      transform: scale(1.1);
+  }
+
+  .card-img-container:hover .overlay {
+      opacity: 1;
+  }
+
+  .btn-light {
+      background-color: #fff;
+      color: #007bff;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 25px;
+  }
+</style>
+
+
+
+
+
+
+<a href="/contact" id="contact">
+  <section id="contact" class="contact section bg-dark text-light py-5">
+    <div class="container text-center section-title mb-5" data-aos="fade-up">
+        <h2 class="display-4 fw-bold text-white">Contact Us</h2>
+        <p class="lead text-muted">Feel free to reach out to me.</p>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <!-- Display Messages -->
+                {% if messages %}
+                <div class="container mt-3">
+                    {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                <div class="card p-4 shadow-lg bg-light text-dark">
+                    <form action="{% url 'contact' %}" method="POST">
+                        {% csrf_token %}
+                        <!-- Name Field -->
+                        <div class="form-group mb-3">
+                            <label for="name"><i class="bi bi-person"></i> Name</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+                        <!-- Phone Number Field -->
+                        <div class="form-group mb-3">
+                            <label for="number"><i class="bi bi-telephone"></i> Phone Number</label>
+                            <input type="tel" name="number" id="number" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+                        <!-- Message Field -->
+                        <div class="form-group mb-3">
+                            <label for="text"><i class="bi bi-chat-text"></i> How can I help you?</label>
+                            <textarea name="desc" id="text" class="form-control" rows="5" placeholder="Describe your query" required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-dark w-100">
+                            <i class="bi bi-box-arrow-in-right"></i> Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</a>
+
+{% endblock hero %}
+
+
